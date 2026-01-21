@@ -1,0 +1,9 @@
+p {
+	color: green;
+}
+.paragraphe-impair {
+	border: 2px solid darkgreen;
+}
+#premier-paragraphe {
+	background-color: lightgreen;
+}
