@@ -1,5 +1,6 @@
 <?php 
 
+$estConnecte = 1;
 $client = 'Daniel';
 $soldeCompte = 150;
 
@@ -16,7 +17,7 @@ $soldeCompte = 150;
 </head>
 <body>
     <div class="container mt-3">
-        
+        <?php if ($estConnecte == 1) { ?>
         <h4>Bienvenue, <?php echo $client; ?></h4>
         <?php echo "<u>Le solde de votre compte est $soldeCompte$</u>"; ?><br>
         <p class="mt-2 mb-1"><b>Derniers cours auxquels vous avez assisté</b></p><br>
@@ -47,7 +48,7 @@ $soldeCompte = 150;
                 </tr>
             </tbody>
         </table>
-        
+        <?php } else { ?>
         <form>
             <h4>Veuillez vous connecter</h4>
             <div class="form-group">
@@ -60,7 +61,7 @@ $soldeCompte = 150;
             </div>
             <button type="submit" class="btn btn-primary">Se connecter</button>
         </form>
-        
+        <?php } ?>
     </div>
 </body>
 </html>

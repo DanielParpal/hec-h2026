@@ -7,11 +7,13 @@
 <body>
 	<div class="container mt-5">
 		<div class="row justify-content-center">
-			<div class="col-6">
+			<div class="col-8">
 				<h5>Liste des cours</h5>
 				<ul class="list-group">
 					<!-- Nous voulons mettre en place un algorithme pour générer la liste HTML dynamiquement -->
-					
+					<?php foreach($titres as $titre) { ?>
+						<li class="list-group-item"><?php echo $titre; ?></li>
+					<?php } ?>
 				</ul>
 			</div>
 		</div>
